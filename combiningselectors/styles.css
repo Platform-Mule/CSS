@@ -1,0 +1,31 @@
+/*group selectors (use ',' to gropu)*/
+h1,h2{
+   color: aqua;
+}
+/*parent to immediate child
+  selector > selector {...}
+*/
+.box > p{
+   color: red;
+}
+
+/*parent to all child or descendants
+  selector selector {...}
+*/
+.box li{
+   color: blue;
+}
+/*chaining selectors:apply where all selectors are true
+   selectorselector   (no space in b/n)
+   always start with the element
+  selector selector {...}
+*/
+li.done{
+   color: green;
+}
+/* combining selectors with ancecster
+   selector  selectorselector
+*/
+ul p.done{
+   font-size: 0.5rem;
+}
